@@ -121,12 +121,9 @@ async def group(client, message):
             for file in files:
                 file_id = file.file_id
                 filename = f"[🎥{get_size(file.file_size)}💿] {file.file_name}"
-                buttons = [
-                    [
-                        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/AJmovieLINKS"),
-                        InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")
-                    ]
-                    ]
+                btn.append(
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
+                    )
         else:
             return
         if not btn:
