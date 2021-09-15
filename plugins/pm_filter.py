@@ -115,7 +115,7 @@ async def group(client, message):
         if not nyva:
             botusername=await client.get_me()
             nyva=botusername.username
-                BOT["username"]=nyva
+            BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -139,7 +139,7 @@ async def group(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📑 Pages 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             poster=None
             if API_KEY:
