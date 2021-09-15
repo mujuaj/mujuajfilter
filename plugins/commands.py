@@ -66,7 +66,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', url= 'https://t.me/worldmoviesaj'),
+                        InlineKeyboardButton('JOIN MAIN CHANNEL', url= 'https://t.me/AJmovieLINKS'),
                         InlineKeyboardButton('More Movies', url='https://t.me/worldmoviesaj')
                     ]
                     ]
@@ -99,7 +99,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", url="https://t.me/worldmoviesaj"),
+                        InlineKeyboardButton("JOIN MAIN CHANNEL", url="https://t.me/AJmovieLINKS"),
                         InlineKeyboardButton("More Movies", url="https://t.me/worldmoviesaj")
                     ],
                     [
