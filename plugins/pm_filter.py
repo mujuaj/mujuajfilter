@@ -289,10 +289,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption=files.caption
                 if CUSTOM_FILE_CAPTION:
                     try:
-                        f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
+                        f_caption=<code>CUSTOM_FILE_CAPTION<code>.format(file_name=title, file_size=size, file_caption=f_caption)
                     except Exception as e:
                         print(e)
-                        f_caption=<code>f_caption<code>
+                        f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [
@@ -321,10 +321,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption=files.caption
                 if CUSTOM_FILE_CAPTION:
                     try:
-                        f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
+                        f_caption=<code>CUSTOM_FILE_CAPTION<code>.format(file_name=title, file_size=size, file_caption=f_caption)
                     except Exception as e:
                         print(e)
-                        f_caption=<code>f_caption<code>
+                        f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{title}"
                 buttons = [
