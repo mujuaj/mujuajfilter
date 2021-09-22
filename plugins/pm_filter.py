@@ -91,10 +91,10 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text=" ☄ NEXT 》",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"🔖 Pages 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -272,8 +272,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/worldmoviesaj'),
-                    InlineKeyboardButton('More Movies', url='https://t.me/worldmoviesaj')
+                    InlineKeyboardButton('║𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹║', url='https://t.me/worldmoviesaj'),
+                    InlineKeyboardButton('╽𝗠𝗼𝗿𝗲 𝗠𝗼𝘃𝗶𝗲𝘀╽', url='https://t.me/worldmoviesaj')
                 ]
                 ]
             await query.message.edit(text="<b>Developer : <a href='https://t.me/avataradorn'>AJ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://t.me/worldmoviesaj/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/AJmovieLINKS'>Click here</a>\nUpdate Channel : <a href='https://t.me/worldmoviesaj'>AJ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
