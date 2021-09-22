@@ -103,7 +103,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("╽𝗠𝗼𝗿𝗲 𝗠𝗼𝘃𝗶𝗲𝘀╽", url="https://t.me/worldmoviesaj")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧", callback_data="about")
                     ]
                 ]
             )
