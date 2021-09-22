@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('JOIN MAIN CHANNEL', url= 'https://t.me/AJmovieLINKS'),
-                        InlineKeyboardButton('More Movies', url='https://t.me/worldmoviesaj')
+                        InlineKeyboardButton('𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url= 'https://t.me/AJmovieLINKS'),
+                        InlineKeyboardButton('╽𝗠𝗼𝗿𝗲 𝗠𝗼𝘃𝗶𝗲𝘀╽', url='https://t.me/worldmoviesaj')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,7 +99,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("║𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟║", url="https://t.me/AJmovieLINKS"),
+                        InlineKeyboardButton("𝗝𝗢𝗜𝗡 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/AJmovieLINKS"),
                         InlineKeyboardButton("╽𝗠𝗼𝗿𝗲 𝗠𝗼𝘃𝗶𝗲𝘀╽", url="https://t.me/worldmoviesaj")
                     ],
                     [
