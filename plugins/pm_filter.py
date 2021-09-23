@@ -51,12 +51,7 @@ async def filter(client, message):
         btn = []
         search = message.text
         files = await get_filter_results(query=search)
-        if files: 
-            results.append(
-                [
-                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/AJmovieLINKS")
-                ]
-            )
+        if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
@@ -85,12 +80,7 @@ async def filter(client, message):
             poster=None
             if API_KEY:
                 poster=await get_poster(search)
-            if poster: 
-            results.append(
-                [
-                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/AJmovieLINKS")
-                ]
-            )
+            if poster:
                 await message.reply_photo(photo=poster, caption=f"<b>🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:{search}\n\n𝐅𝐑𝐎𝐌:◻⬜ @AJmovieLINKS ⬛◼  ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
