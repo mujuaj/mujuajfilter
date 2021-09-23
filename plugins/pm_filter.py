@@ -210,7 +210,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝘽𝙖𝙘𝙠", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"🔖 𝗣𝗮𝗴𝗲 {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"┏༼ ◉ ╭╮ ◉༽┓🔖 𝗣𝗮𝗴𝗲 {int(index)+2}/{data['total']} (๑′°︿°๑)", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -224,7 +224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝘽𝙖𝙘𝙠", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"🔖 𝗣𝗮𝗴𝗲 {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"┏༼ ◉ ╭╮ ◉༽┓🔖 𝗣𝗮𝗴𝗲 {int(index)+2}/{data['total']} (๑′°︿°๑)", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -248,7 +248,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("☄ 𝗚𝗢 𝗧𝗢 𝗡𝗘𝗫𝗧 𝗣𝗔𝗚𝗘 📇", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"🔖 𝗣𝗮𝗴𝗲 {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"┏༼ ◉ ╭╮ ◉༽┓🔖 𝗣𝗮𝗴𝗲 {int(index)}/{data['total']} (๑′°︿°๑)", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -262,7 +262,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝘽𝙖𝙘𝙠", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"🔖 𝗣𝗮𝗴𝗲 {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"┏༼ ◉ ╭╮ ◉༽┓🔖 𝗣𝗮𝗴𝗲 {int(index)}/{data['total']} (๑′°︿°๑)", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
