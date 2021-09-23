@@ -51,7 +51,12 @@ async def filter(client, message):
         btn = []
         search = message.text
         files = await get_filter_results(query=search)
-        if files:
+        if files: 
+            results.append(
+                [
+                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/AJmovieLINKS")
+                ]
+            )
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
