@@ -85,7 +85,12 @@ async def filter(client, message):
             poster=None
             if API_KEY:
                 poster=await get_poster(search)
-            if poster:
+            if poster: 
+            btn.append(
+                [
+                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/AJmovieLINKS")
+                ]
+            )
                 await message.reply_photo(photo=poster, caption=f"<b>🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:{search}\n\n𝐅𝐑𝐎𝐌:◻⬜ @AJmovieLINKS ⬛◼  ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
