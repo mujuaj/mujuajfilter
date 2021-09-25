@@ -1,5 +1,6 @@
 import os
 import logging
+from pyrogram.errors import PeerIdInvalid
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
@@ -197,3 +198,22 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/avataradorn'>AJ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/worldmoviesaj'>Click here</a>\nUpdate Channel : <a href='https://t.me/worldmoviesaj'>AJ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+@Client.on_message(filters.command(["cast"]) & filters.chat(1082159563), group=1)
+async def cast(bot, update):
+  msg = '<b>' + update.text[6:] + '</b>'
+  success=0
+
+  async for member in bot.iter_chat_members(chat_id=-1001540786529) :
+    try:
+      await bot.send_message(text=msg, chat_id=member.user.id, parse_mode="html")
+      success+=1
+    except PeerIdInvalid :
+      pass
+    except Exception as e :
+         print(e)
+         
+
+  await bot.send_message(
+    text=f"Successfully Broadcasted Message To {success} members !!",
+    chat_id=1082159563
+    )
