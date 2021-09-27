@@ -78,7 +78,7 @@ async def filter(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             poster=None 
-            buttons = [[InlineKeyboardButton("Join My Channel", url="https://t.me/DM_Linkz")]]  + buttons
+            buttons = [[InlineKeyboardButton("🔲 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🔲", url="https://t.me/AJmovieLINKS")]]  + buttons
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
@@ -98,7 +98,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text=f"🔖 𝗣𝗮𝗴𝗲 1/{data['total']}",callback_data="pages")]
         )
         poster=None 
-        buttons = [[InlineKeyboardButton("Join My Channel", url="https://t.me/DM_Linkz")]]  + buttons
+        buttons = [[InlineKeyboardButton("🔲 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🔲", url="https://t.me/AJmovieLINKS")]]  + buttons
         if API_KEY:
             poster=await get_poster(search)
         if poster:
@@ -144,7 +144,7 @@ async def group(client, message):
                 [InlineKeyboardButton(text="🔖𝗣𝗔𝗚𝗘𝗦 1/1",callback_data="pages")]
             )
             poster=None 
-            buttons = [[InlineKeyboardButton("Join My Channel", url="https://t.me/DM_Linkz")]]  + buttons
+            buttons = [[InlineKeyboardButton("🔲 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🔲", url="https://t.me/AJmovieLINKS")]]  + buttons
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
