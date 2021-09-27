@@ -97,7 +97,8 @@ async def filter(client, message):
         buttons.append(
             [InlineKeyboardButton(text=f"🔖 𝗣𝗮𝗴𝗲 1/{data['total']}",callback_data="pages")]
         )
-        poster=None
+        poster=None 
+        buttons = [[InlineKeyboardButton("Join My Channel", url="https://t.me/DM_Linkz")]]  + buttons
         if API_KEY:
             poster=await get_poster(search)
         if poster:
