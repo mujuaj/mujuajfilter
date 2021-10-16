@@ -93,7 +93,7 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_text(f''' <a href="https://telegra.ph/file/7cfb09d344bdbe70a6367.jpg">⬞</a> ''' 
+        await cmd.reply_text(START_MSG,  
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
